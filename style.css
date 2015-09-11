@@ -56,26 +56,18 @@ h2
 
 .profile-pic
 {
-    margin: 30px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
     border-style: solid;
     border-width: 5px;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
-	position: relative;
-	left: 8%;
 }
 
 .page-header
 {
     background-color: gold;
     background-color: rgba(222, 191, 37, 0.3);
-    font-family: "MS Sans Serif";
-    font-weight: bold;
-    color: white;
-    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
     padding: 10px 20px;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
-    text-align: center;
-    font-size: 36px;
     margin: 0px 0px 10px 0px;
 	border-bottom-style: solid;
 	border-width: 1px;
@@ -133,6 +125,7 @@ h2
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
 	height: 48px;
 	width: 48px;
+	background-color: white;
 }
 
 .social-link img
@@ -143,8 +136,8 @@ h2
 
 .social-link img:hover
 {
-	opacity: 0.4;
-    filter: alpha(opacity=40);
+	opacity: 0.3;
+    filter: alpha(opacity=30);
 }
 
 .page-footer
@@ -162,4 +155,25 @@ h2
 	border-top-style: solid;
 	border-width: 1px;
     border-color: grey;
+}
+
+.social-icons
+{
+    font-family: "MS Sans Serif";
+    font-weight: bold;
+    color: white;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    font-size: 36px;
+	padding-bottom: 68px;
+	text-align: top;
+}
+
+.pic-name
+{
+    font-family: "MS Sans Serif";
+    font-weight: bold;
+    color: white;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    font-size: 36px;
 }
