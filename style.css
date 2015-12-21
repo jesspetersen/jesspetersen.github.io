@@ -5,6 +5,7 @@
 html
 {
     background-image: url(images/shattered.png);
+	background-color: rgba (255, 255, 255, 0.9);
 }
 
 p::selection
@@ -47,6 +48,24 @@ h2
 	font-family: "Open Sans Condensed";
     font-size: 32px;
     text-align: center;
+}
+
+h3
+{
+	font-family: "Open Sans Condensed";
+    font-size: 20px;
+	font-weight: 900;
+}
+
+table, th, td
+{
+	border: 1px solid black;
+}
+
+td, th
+{
+	padding: 5px;
+	text-align: center;
 }
 
 .page-content p
@@ -110,7 +129,7 @@ h2
 .page-content
 {
     background-color: gold;
-    background-color: rgba(112, 86, 103, 0.1);
+    background-color: rgba(255, 255, 255, 0.5);
     font-family: "Yanone Kaffeesatz";
     border-style: solid;
     border-width: 2px;
@@ -123,6 +142,11 @@ h2
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
     box-sizing: border-box;
     margin: 10px auto;
+}
+
+.gallery
+{
+	text-align: center;
 }
 
 .gallery img
@@ -195,4 +219,15 @@ h2
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
     text-align: center;
     font-size: 36px;
+}
+
+.blog-date
+{
+	text-align: right;
+}
+
+.result-table
+{
+	width: 100%;
+	background-color: #f1f1c1;
 }
