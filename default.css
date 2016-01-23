@@ -283,7 +283,7 @@ hr {
 	{
 		overflow: hidden;
 		height: 330px;
-		background: url(images/banner.jpg) no-repeat center;
+		background: url(images/banner.JPG) no-repeat center;
 		background-size: cover;
 	}
 	
@@ -295,7 +295,7 @@ hr {
 	{
 		overflow: hidden;
 		height: 330px;
-		background: url(images/originalsitebanner.jpg) no-repeat center;
+		background: url(images/originalsitebanner.JPG) no-repeat center;
 		background-size: cover;
 	}
 	
@@ -303,7 +303,7 @@ hr {
 	{
 		overflow: hidden;
 		height: 330px;
-		background: url(images/SoKbanner.jpg) no-repeat center;
+		background: url(images/SoKbanner.JPG) no-repeat center;
 		background-size: cover;
 	}
 	
@@ -311,7 +311,7 @@ hr {
 	{
 		overflow: hidden;
 		height: 330px;
-		background: url(images/blogbanner.png) no-repeat center;
+		background: url(images/blogbanner.PNG) no-repeat center;
 		background-size: cover;
 	}
 	
