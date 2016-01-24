@@ -315,6 +315,14 @@ hr {
 		background-size: cover;
 	}
 	
+	#CSRefbanner 
+	{
+		overflow: hidden;
+		height: 330px;
+		background: url(images/CSRefbanner.jpg) no-repeat center;
+		background-size: cover;
+	}
+	
 
 /** MENU */
 
