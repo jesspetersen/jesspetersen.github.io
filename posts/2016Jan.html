@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<script>
+function myFunction(id) {
+    var x = document.getElementById(id);
+if (x.className.indexOf("w3-show") == -1) {
+  x.className += " w3-show";
+  x.previousElementSibling.className += " w3-red";
+} else { 
+  x.className = x.className.replace("w3-show", "");
+  x.previousElementSibling.className = 
+  x.previousElementSibling.className.replace("w3-red", "");
+}
+}
+</script>
+<title>Jess Petersen</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-sidenav a,.w3-sidenav h4 {font-weight:bold}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidenav/menu -->
+<nav class="w3-sidenav w3-collapse w3-pink w3-animate-left" style="z-index:3;width:300px;" id="mySidenav"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="../images/dp.jpg" style="width:45%;" class="w3-round-large"><br><br>
+    <h4 class="w3-padding-0"><b>JESS PETERSEN</b></h4>
+    <p class="w3-text-sand">Software Engineer</p>
+  </div>
+  <a href="../index.html" class="w3-padding">HOME</a>
+  <a href="../about.html" class="w3-padding">ABOUT</a>
+  <a href="../projects.html" class="w3-padding">PROJECTS</a>
+  <a href="../blog.html" class="w3-padding w3-text-teal">BLOG</a>
+   
+  <div class="w3-section w3-padding-top w3-large">
+    <a href="https://www.facebook.com/jepica" class="w3-hover-pink w3-hover-text-indigo w3-show-inline-block"><i class="fa fa-facebook-official"></i></a>
+    <a href="https://www.instagram.com/allhailkingofthelosers/" class="w3-hover-pink w3-hover-text-deep-orange w3-show-inline-block"><i class="fa fa-instagram"></i></a>
+    <a href="https://github.com/jesspetersen" class="w3-hover-pink w3-hover-text-light-blue w3-show-inline-block"><i class="fa fa-github-alt"></i></a>
+    <a href="https://www.linkedin.com/in/jessica-petersen-a8a65774" class="w3-hover-pink w3-hover-text-grey w3-show-inline-block"><i class="fa fa-linkedin"></i></a>
+    <a href="mailto:jess@jesspetersen.net" class="w3-hover-pink w3-hover-text-khaki w3-show-inline-block"><i class="fa fa-envelope-o"></i></a>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidenav on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header class="w3-container">
+    <span class="w3-opennav w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <h1><b>BLOG</b></h1>
+    <div class="w3-section w3-bottombar w3-padding-3">
+    </div>
+  </header>
+  
+  <!-- Latest Blog Section -->
+  <div class="w3-row-padding w3-margin">
+    <div class="w3-margin-top">
+      <img src="../images/NewYear2016.jpg" alt="Notebook" style="width:100%">
+      <h2>THE START OF SOMETHING NEW, JANUARY 2016</h2>
+      <div class="w3-justify">
+        <p>New year; new you &#151; that&#39;s what they say, isn&#39;t it? In my case, not exactly. While becoming an entirely brand new person sounds like fun, it&#39;s the last thing that I&#39;d want to do. I&#39;m looking forward to using this year to improve myself &#151; work harder, better, and push myself to new heights. January marks the beginning of my second year as a university student, and my first as a software engineer; it&#39;s not a prospect that I take lightly, and I intend on making the most of every opportunity presented to me in the coming year.</p>
+				<p>I have a number of goals that I wish to complete this year, and each one has the aim of improving my mental, physical or emotional wellbeing (or a combination of the three). They are:</p>
+					<ul>
+						<li>Excel at university, keeping a semester average of at least an <strong>A-</strong>.</li>
+						<li>Continue improving upon my knowledge of software development, and gain an understanding of at least some advanced concepts.</li>
+						<li>Become a more active member of the developer community, and attend at least four meetups for like-minded individuals.</li>
+						<li>Complete and release my android app, &#34;C# Quick Reference&#34;, on the google play store.</li>
+						<li>Take some time each week to relax and do something that I enjoy, like going on a date with my partner or raiding with my guild.</li>
+					</ul>
+				<p>Progress on my Android app, &#34;C# Quick Reference&#34; has been a little slow this month, and I aim to spend some more time working on it in February. I have really enjoyed the experience so far, and after a few little hiccoughs in initial development where I didn&#39;t really understand how to use Android Studio effectively, I&#39;m off to a good start. My favourite aspect of working with Android Studio is the ability to customise my content. While the drag-and-drop editor is fantastic for layouts, I really enjoy being able to use the XML skills I learned last year to make more complicated edits in the code. Learning Java has been relatively simple &#151;  I have been able to apply many concepts I learned from my time in C#, and while I&#39;m not learning the language comprehensively at the moment, I&#39;ve been able to figure out what is needed to bring my app into a cohesive whole. The most difficult part of developing the app so far has been writing the content. I need to commit to writing more content next month if I intend on releasing the app before the end of the year. </p>
+				<p>I gave jesspetersen.net a facelift this month, and I&#39;m super pleased with the results. While my original site (located at site.jesspetersen.net) served the purpose of displaying my portfolio and achievements to the world, I really wanted something more streamlined and attractive. After days of agonising over various drag-and-drop site creators before discovering that the only way to link it to my domain required me to spend money, I eventually settled on an HTML/CSS template. The template was very well documented and I was easily able to alter it to match my needs, changing the initial page to suit each individual section of my site. Even though the new and improved site isn&#39;t entirely of my own creation, I feel much better knowing that it is more professional and presentable to potential employers and colleagues.</p>
+				<p>More than anything, I can&#39;t wait to start back at university next month. While working on my personal projects has been a great way to spend the holidays, especially since I&#39;m making relatively good progress, it does start to get boring after a while. Going back to school and working on my education is something that I take great pleasure in, and I love the variety of knowledge as well as being with my friends who have similar interests. </p>
+				<p>I&#39;m working hard on my goals and with school just around the corner, I&#39;m more motivated than ever to get some work done &#151; bring on February; bring on my future.</p>
+      </div>
+      <div class="w3-container w3-border-pink w3-topbar">
+        <p></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-white">
+  <div class="w3-row-padding">
+    <div class="w3-col w3-container w3-white" style="width:66%">
+      <p></p>
+    </div>
+
+    <div class="w3-third">
+      <p>&#169; Jessica Petersen 2016</p>
+      <p>Student | Student Council Deputy Chair | Student Council Under 25s Representative 2016 | IT Programme Committee Student Representative</p>
+      <p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </div>
+
+  </div>
+  </footer>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidenav
+function w3_open() {
+    document.getElementById("mySidenav").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidenav").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>

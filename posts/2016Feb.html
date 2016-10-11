@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<script>
+function myFunction(id) {
+    var x = document.getElementById(id);
+if (x.className.indexOf("w3-show") == -1) {
+  x.className += " w3-show";
+  x.previousElementSibling.className += " w3-red";
+} else { 
+  x.className = x.className.replace("w3-show", "");
+  x.previousElementSibling.className = 
+  x.previousElementSibling.className.replace("w3-red", "");
+}
+}
+</script>
+<title>Jess Petersen</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-sidenav a,.w3-sidenav h4 {font-weight:bold}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidenav/menu -->
+<nav class="w3-sidenav w3-collapse w3-pink w3-animate-left" style="z-index:3;width:300px;" id="mySidenav"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="../images/dp.jpg" style="width:45%;" class="w3-round-large"><br><br>
+    <h4 class="w3-padding-0"><b>JESS PETERSEN</b></h4>
+    <p class="w3-text-sand">Software Engineer</p>
+  </div>
+  <a href="../index.html" class="w3-padding">HOME</a>
+  <a href="../about.html" class="w3-padding">ABOUT</a>
+  <a href="../projects.html" class="w3-padding">PROJECTS</a>
+  <a href="../blog.html" class="w3-padding w3-text-teal">BLOG</a>
+   
+  <div class="w3-section w3-padding-top w3-large">
+    <a href="https://www.facebook.com/jepica" class="w3-hover-pink w3-hover-text-indigo w3-show-inline-block"><i class="fa fa-facebook-official"></i></a>
+    <a href="https://www.instagram.com/allhailkingofthelosers/" class="w3-hover-pink w3-hover-text-deep-orange w3-show-inline-block"><i class="fa fa-instagram"></i></a>
+    <a href="https://github.com/jesspetersen" class="w3-hover-pink w3-hover-text-light-blue w3-show-inline-block"><i class="fa fa-github-alt"></i></a>
+    <a href="https://www.linkedin.com/in/jessica-petersen-a8a65774" class="w3-hover-pink w3-hover-text-grey w3-show-inline-block"><i class="fa fa-linkedin"></i></a>
+    <a href="mailto:jess@jesspetersen.net" class="w3-hover-pink w3-hover-text-khaki w3-show-inline-block"><i class="fa fa-envelope-o"></i></a>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidenav on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header class="w3-container">
+    <span class="w3-opennav w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <h1><b>BLOG</b></h1>
+    <div class="w3-section w3-bottombar w3-padding-3">
+    </div>
+  </header>
+  
+  <!-- Latest Blog Section -->
+  <div class="w3-row-padding w3-margin">
+    <div class="w3-margin-top">
+      <div class="w3-container">
+        <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="7" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BB8OQdJMObo/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">Its #orientation day! So lucky to be able to help out and introduce new students to #university!</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A photo posted by Jess (@allhailkingofthelosers) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2016-02-18T20:26:39+00:00">Feb 18, 2016 at 12:26pm PST</time></p></div></blockquote>
+        <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
+      </div>
+      <h2>IN THE DEEP END, FEB 2016</h2>
+      <div class="w3-justify">
+        <p>Taking advantage of every opportunity presented to you is never easy, especially as a busy university student with precious little free time. The last few weeks have been a whirlwind of activity, between collecting school supplies to helping out at orientation, I&#39;ve certainly had my work cut out for me. This would a problem for someone who didn&#39;t enjoy it, but as someone who thrives on the thrill of a new challenge, I have been finding myself more and more involved in atmosphere of university.</p>
+				<p>More than anything else, I am incredibly passionate about helping others learn. Even as a young child I often imagined myself teaching, and over time those interests grew with me. While I may not choose to pursue a teaching career (at least not right now!), this passion is still a huge part of my personality and I&#39;ve always jumped at the chance to divulge my well-earned knowledge into willing minds. It is not surprising then, that when I stumbled upon the PASS program I was beside myself with excitement. For those who don&#39;t know, PASS (Peer Assisted Study Sessions) is a program run by facilitators who help students with especially challenging courses. This includes running study sessions each week, attending lessons and assisting the lecturer when needed. I sent in my application almost immediately and was rewarded with an invitation to my first ever job interview.</p>
+				<p>I was nervous. My shaking hands gripped the table for support while I waited for Karen, my interviewer and overseer of the PASS program. I wanted to impress her, more than anything I had ever wanted anything in my life. In the end, Karen was very impressed with me and invited me to attend the PASS workshop at the end of the month in order to become a full-fledged PASS facilitator. I took mum out for coffee afterwards.</p>
+				<p>Orientation day was one of the best days of my life. I spent a short amount of time troubleshooting network issues with tech support, but the majority of my time was spent with the IT tour group. I snuck into the lecture theatre for the opening address, which always fills me with passion for what I do (I&#39;m 100% serious when I say that), and then followed the bachelor group up to room 202. I was asked to speak about my experience so far at MIT for a short time, which I immensely enjoyed, despite my trembling voice, and then sat down to enjoy the lecturers explaining the available majors. I chatted to a few of the new students (who were understandably nervous) and even a few staff members who I had never previously met. It was fantastic to spend the day reaffirming my passions and seeing it in others; I can&#39;t wait to get to know the new students and help them with their future endeavours.</p>
+				<p>Going back to uni always requires some getting used to &#151; my afternoon classes were quickly replaced by early morning lessons before semester started, so I have the pleasure of waking up bright and early (ugh) almost every morning of the week. The biggest change was the introduction of three hour lectures. Previously, all of my classes had been two hours long, twice per week. This suited me just fine &#151; it&#39;s easier to maintain concentration when there&#39;s regular breaks and multiple sessions made it easier to practice and check I was on track. Now all of my classes are three hour long slogs through swamps of concepts, and only take place once every week. Last year, when I signed up for these classes, I assumed that it would be fine &#151; I told myself that I would barely notice the difference. I was wrong. I&#39;m not sure if it&#39;s because I&#39;ve spent my holidays relaxing for hours on end, with nothing to dictate my schedule other than twitch.tv streams or simply because my body seems to require an inhuman amount of sleep, but I struggled through that first three hour class. I came home and went straight to bed, only to wake in the wee hours of the morning, disoriented and in desperate need of food.</p>
+				<p>It&#39;s not all bad though; I&#39;ve been given the opportunity to act as a class representative, helping staff to identify issues and concerns of my class mates; I&#39;ve also considered applying for Student Voice Representative (a student association) this year to help make voices heard. Even though right now I feel like I&#39;m in the deep end with nothing but my excellent organisational skills (winky face) to keep me afloat, I&#39;m sure that everything will fall into place soon. I can&#39;t wait to push myself to be the best student that I can be as well as a strong, positive member of the MIT family.</p>
+      </div>
+      <div class="w3-container w3-border-pink w3-topbar">
+        <p></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-white">
+  <div class="w3-row-padding">
+    <div class="w3-col w3-container w3-white" style="width:66%">
+      <p></p>
+    </div>
+
+    <div class="w3-third">
+      <p>&#169; Jessica Petersen 2016</p>
+      <p>Student | Student Council Deputy Chair | Student Council Under 25s Representative 2016 | IT Programme Committee Student Representative</p>
+      <p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </div>
+
+  </div>
+  </footer>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidenav
+function w3_open() {
+    document.getElementById("mySidenav").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidenav").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
