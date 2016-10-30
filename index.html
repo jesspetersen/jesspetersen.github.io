@@ -1,19 +1,15 @@
-<!DOCTYPE HTML>
-<!--
-	Twenty by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>Jessica Petersen</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<script>
+<title>Jess Petersen</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-sidenav a,.w3-sidenav h4 {font-weight:bold}
+</style>
+<script>
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -22,259 +18,153 @@
 		  ga('create', 'UA-72792171-1', 'auto');
 		  ga('send', 'pageview');
 
-		</script>
-	</head>
-	<body class="index">
-		<div id="page-wrapper">
+</script>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
 
-			<!-- Header -->
-				<header id="header" class="alt">
-					<h1 id="logo"><a href="index.html">Jessica Petersen <span>Home</span></a></h1>
-					<nav id="nav">
-						<ul>
-							<li class="current"><a href="index.html">Home</a></li>
-							<li class="submenu">
-								<a href="#">Menu</a>
-								<ul>
-									<li><a href="portfolio.html">Portfolio</a></li>
-									<li><a href="blog.html">Blog</a></li>
-									<li><a href="contact.html">Contact</a></li>
-								</ul>
-							</li>
-							<li><a href="blog.html" class="button special">Blog</a></li>
-						</ul>
-					</nav>
-				</header>
+<!-- Sidenav/menu -->
+<nav class="w3-sidenav w3-collapse w3-pink w3-animate-left" style="z-index:3;width:300px;" id="mySidenav"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="images/dp.jpg" style="width:50%;" class="w3-round-large"><br><br>
+    <h4 class="w3-padding-0"><b>JESS PETERSEN</b></h4>
+    <p class="w3-text-sand">Software Engineer</p>
+  </div>
+  <a href="index.html" class="w3-padding w3-text-teal">HOME</a>
+  <a href="about.html" class="w3-padding">ABOUT</a>
+  <a href="projects.html" class="w3-padding">PROJECTS</a>
+  <a href="blog.html" class="w3-padding">BLOG</a>
+   
+  <div class="w3-section w3-padding-top w3-large">
+    <a href="https://www.facebook.com/jepica" class="w3-hover-pink w3-hover-text-indigo w3-show-inline-block"><i class="fa fa-facebook-official"></i></a>
+    <a href="https://www.instagram.com/allhailkingofthelosers/" class="w3-hover-pink w3-hover-text-deep-orange w3-show-inline-block"><i class="fa fa-instagram"></i></a>
+    <a href="https://github.com/jesspetersen" class="w3-hover-pink w3-hover-text-light-blue w3-show-inline-block"><i class="fa fa-github-alt"></i></a>
+    <a href="https://www.linkedin.com/in/jessica-petersen-a8a65774" class="w3-hover-pink w3-hover-text-grey w3-show-inline-block"><i class="fa fa-linkedin"></i></a>
+    <a href="#" class="w3-hover-pink w3-hover-text-khaki w3-show-inline-block" onclick="document.getElementById('emailForm').style.display='block'"><i class="fa fa-envelope-o"></i></a>
+  </div>
+</nav>
 
-			<!-- Banner -->
-				<section id="banner">
+<!-- Overlay effect when opening sidenav on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
-					<!--
-						".inner" is set up as an inline-block so it automatically expands
-						in both directions to fit whatever's inside it. This means it won't
-						automatically wrap lines, so be sure to use line breaks where
-						appropriate (<br />).
-					-->
-					<div class="inner">
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
 
-						<header>
-							<h2>JESS</h2>
-						</header>
-						<p>I am <strong>Jess</strong>, a passionate
-						<br />
-						software engineering
-						<br />
-						student aiming to
-						<br />
-						make a difference.</p>
-						<footer>
-							<ul class="buttons vertical">
-								<li><a href="#main" class="button fit scrolly">Tell Me More</a></li>
-							</ul>
-						</footer>
+  <!-- Header -->
+  <header class="w3-container">
+    <span class="w3-opennav w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <h1><b>HOME</b></h1>
+    <div class="w3-section w3-bottombar w3-padding-3">
+    </div>
+  </header>
+  
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <a href="posts/2016sem1.html"><img src="images/CollageSem12016.jpg" alt="Semester 1, 2016" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p><b>Full Steam Ahead - Semester One, 2016</b></p>
+        <p>PASS, MSA, Databases, and student voice.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <a href="posts/2016Feb.html"><img src="images/Orientation2016.png" alt="Orientation" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p><b>In The Deep End - Feb 2016</b></p>
+        <p>Orientation, interview, and class changes.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <a href="posts/2016Jan.html"><img src="images/NewYear2016.jpg" alt="New Year New You" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p><b>The Start of Something New - Jan 2016</b></p>
+        <p>Goals, personal project progress, and uni prep.</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <a href="projects/CuteWriter.html"><img src="images/PortfolioCuteWriter.png" alt="CuteWriter" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p><b>CuteWriter</b></p>
+        <p>A custom notepad clone with added cuteness!</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <a href="projects/SaviourOfKatar.html"><img src="images/PortfolioSoK.jpg" alt="Saviour of Katar" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p><b>Saviour of Katar</b></p>
+        <p>A city-saving, monster-slaying flash adventure!</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <a href="projects/OldSite.html"><img src="images/PortfolioSiteShot.jpg" alt="site.jesspetersen.net" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p><b>site.jesspetersen.net</b></p>
+        <p>From-scratch web development by yours truly.</p>
+      </div>
+    </div>
+  </div>
 
-					</div>
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-white">
+  <div class="w3-row-padding">
+    <div class="w3-col w3-container w3-white" style="width:66%">
+      <p></p>
+    </div>
 
-				</section>
+    <div class="w3-third">
+      <p>&#169; Jessica Petersen 2016</p>
+      <p>Student | Student Council Deputy Chair | Student Council Under 25s Representative 2016 | IT Programme Committee Student Representative</p>
+      <p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </div>
 
-			<!-- Main -->
-				<article id="main">
+  </div>
+  </footer>
 
-					<header class="special container">
-						<span class="icon fa-code"></span>
-						<h2>I'm Jess. A twenty-year-old aspiring software engineer,
-						<br />
-						 who enjoys books, video games and vanilla cola.</h2>
-						<!--<p>
-						 I have a huge passion for IT and the challenges it brings.
-						 <br />
-						 I pride myself on my ability to create innovative solutions, especially to difficult problems.
-						<br />
-						 I work very hard to achieve results far beyond expectations and my excellent organisational skills help me to avoid losing focus of my goals.</p>-->
-					</header>
+<!-- End page content -->
+</div>
 
-					<!-- One -->
-						<section class="wrapper style2 container special-alt">
-							<div class="row 50%">
-								<div class="8u 12u(narrower)">
+<!--Email form-->
+<div id="emailForm" class="w3-modal">
+    <div class="w3-modal-content w3-card-8 w3-animate-zoom" style="max-width:600px">
+  
+      <div class="w3-center"><br>
+        <span onclick="document.getElementById('emailForm').style.display='none'" class="w3-closebtn w3-hover-red w3-container w3-padding-8 w3-display-topright" title="Close Modal">x</span>
+      </div>
 
-									<header>
-										<h2>Here's a few things that I'm especially <strong>enthusiastic</strong> about.</h2>
-									</header>
-									<p>I've always been a lover of games, starting with simple RTSs in my childhood. The introduction of <strong>steam</strong> and <strong>twitch.tv</strong> have enabled my love to grow. I'm extremely passionate about <strong>education</strong>, and I hope that my technological creations will be able to support and grow willing minds.
-									<br />
-									Much of my childhood was spent immersed in other worlds, and <strong>books</strong> have always had a special place in my heart. Most recently I've been enjoying playing <strong>airsoft</strong>, something which I have have been captivated with for quite some time now.</p>
-									<footer>
-										<ul class="buttons">
-											<li><a href="blog.html" class="button">More About Me</a></li>
-										</ul>
-									</footer>
+      <form class="w3-container" action="https://formspree.io/jess@jesspetersen.net" method="POST">
+        <div class="w3-section">
+          <label class="w3-validate"><b>Your Email Address</b></label>
+          <input class="w3-input w3-border w3-margin-bottom" type="email" placeholder="Enter Email" name="email" required>
+          <label><b>Message</b></label>
+          <textarea class="w3-input w3-border" type="text" placeholder="Enter Message" name="message" required></textarea>
+          <button class="w3-btn-block w3-green w3-section w3-padding" type="submit">Send</button>
+        </div>
+      </form>
 
-								</div>
-								<div class="4u 12u(narrower) important(narrower)">
+      <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+        <button onclick="document.getElementById('emailForm').style.display='none'" type="button" class="w3-btn w3-red">Cancel</button>
+      </div>
 
-									<ul class="featured-icons">
-										<li><span class="icon fa-steam"><span class="label">Feature 1</span></span></li>
-										<li><span class="icon fa-twitch"><span class="label">Feature 2</span></span></li>
-										<li><span class="icon fa-laptop"><span class="label">Feature 3</span></span></li>
-										<li><span class="icon fa-graduation-cap"><span class="label">Feature 4</span></span></li>
-										<li><span class="icon fa-book"><span class="label">Feature 5</span></span></li>
-										<li><span class="icon fa-bomb"><span class="label">Feature 6</span></span></li>
-									</ul>
+    </div>
+  </div>
 
-								</div>
-							</div>
-						</section>
+<script>
+// Script to open and close sidenav
+function w3_open() {
+    document.getElementById("mySidenav").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidenav").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
 
-					<!-- Two -->
-					<!--Removing Section Two
-						<section class="wrapper style1 container special">
-							<div class="row">
-								<div class="4u 12u(narrower)">
-
-									<section>
-										<span class="icon featured fa-check"></span>
-										<header>
-											<h3>Building Windows Apps</h3>
-										</header>
-										<p>I've been studying software engineering for two-and-a-half years now, and using responsive GUI for half of that time. Especially familiar with C# and XAML, I have been working with github to host my projects.</p>
-									</section>
-
-								</div>
-								<div class="4u 12u(narrower)">
-
-									<section>
-										<span class="icon featured fa-check"></span>
-										<header>
-											<h3>Working with AI</h3>
-										</header>
-										<p>As a programmer with a pronounced interest in gaming, I have been developing my AI skills for many months now. One of my current goals is to build complex AI for my personal project, "Underworld Warriors".</p>
-									</section>
-
-								</div>
-								<div class="4u 12u(narrower)">
-
-									<section>
-										<span class="icon featured fa-check"></span>
-										<header>
-											<h3>Using a range of techs</h3>
-										</header>
-										<p>As an attendee of many industry events, I have been exposed to a large number of technologies and languages. Some of the highlights include: Git, SQL, Excel, Python, Clojure, Actionscript 3.</p>
-									</section>
-
-								</div>
-							</div>
-						</section>
-						-->
-
-					<!-- Three -->
-						<section class="wrapper style3 container special">
-
-							<header class="major">
-								<h2>Check out what I've been up to lately</h2>
-							</header>
-
-							<div class="row">
-								<div class="6u 12u(narrower)">
-
-									<section>
-										<a href="projects/UnderworldWarriors.html" class="image featured"><img src="images/HomeUW.PNG" alt="" /></a>
-										<header>
-											<h3>Underworld Warriors</h3>
-										</header>
-										<p>A text-based role-playing game where the player must navigate past a series of obstacles to successfully escape from the dungeon.</p>
-									</section>
-
-								</div>
-								<div class="6u 12u(narrower)">
-
-									<section>
-										<a href="projects/CuteWriter.html" class="image featured"><img src="images/HomeCuteWriter.PNG" alt="" /></a>
-										<header>
-											<h3>CuteWriter</h3>
-										</header>
-										<p>A notepad clone built from scratch featuring a "cute" theme, complete with cat noises and word processor functionality.</p>
-									</section>
-
-								</div>
-							</div>
-							<div class="row">
-								<div class="6u 12u(narrower)">
-
-									<section>
-										<a href="projects/SoK.html" class="image featured"><img src="images/HomeSoK.jpg" alt="" /></a>
-										<header>
-											<h3>Saviour of Katar</h3>
-										</header>
-										<p>My first solo project, a real time strategy role playing flash game, where you play as the hero who must save the town.</p>
-									</section>
-
-								</div>
-								<div class="6u 12u(narrower)">
-
-									<section>
-										<a href="projects/OldSite.html" class="image featured"><img src="images/HomeSiteShot.JPG" alt="" /></a>
-										<header>
-											<h3>site.jesspetersen.net</h3>
-										</header>
-										<p>My first attempt at a personal portfolio website, coded from scratch using HTML and CSS at a <a href="http://gathergather.co.nz/workshops/">gather</a> event.</p>
-									</section>
-
-								</div>
-							</div>
-
-							<footer class="major">
-								<ul class="buttons">
-									<li><a href="portfolio.html" class="button">See More</a></li>
-								</ul>
-							</footer>
-
-						</section>
-
-				</article>
-
-			<!-- CTA -->
-				<section id="cta">
-
-					<header>
-						<h2>Let's chat!</h2>
-						<p>I'll get back to you as soon as I can!</p>
-					</header>
-					<footer>
-						<ul class="buttons">
-							<li><a href="contact.html" class="button special">Send me a message</a></li>
-						</ul>
-					</footer>
-
-				</section>
-
-			<!-- Footer -->
-				<footer id="footer">
-
-					<ul class="icons">
-						<li><a href="https://www.facebook.com/jepica" class="icon circle fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="https://www.instagram.com/allhailkingofthelosers/" class="icon circle fa-instagram"><span class="label">Google+</span></a></li>
-						<li><a href="https://github.com/jesspetersen" class="icon circle fa-github-alt"><span class="label">Github</span></a></li>
-						<li><a href="https://www.linkedin.com/in/jessica-petersen-a8a65774" class="icon circle fa-linkedin"><span class="label">Dribbble</span></a></li>
-					</ul>
-
-					<ul class="copyright">
-						<li>&copy; Jessica Petersen</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-
-				</footer>
-
-		</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollgress.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
-
-	</body>
+</body>
 </html>
