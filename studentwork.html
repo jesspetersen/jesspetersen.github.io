@@ -1,5 +1,18 @@
 <!DOCTYPE html>
 <html>
+<script>
+function myFunction(id) {
+    var x = document.getElementById(id);
+if (x.className.indexOf("w3-show") == -1) {
+  x.className += " w3-show";
+  x.previousElementSibling.className += " w3-red";
+} else { 
+  x.className = x.className.replace("w3-show", "");
+  x.previousElementSibling.className = 
+  x.previousElementSibling.className.replace("w3-red", "");
+}
+}
+</script>
 <title>Jess Petersen</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="styles/w3.css">
@@ -32,9 +45,9 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
     <p class="w3-text-sand">Digital Technologies Teacher</p>
   </div>
   <a href="index.html" class="w3-padding">HOME</a>
-  <a href="about.html" class="w3-padding w3-text-teal">ABOUT</a>
+  <a href="about.html" class="w3-padding">ABOUT</a>
   <a href="projects.html" class="w3-padding">PROJECTS</a>
-  <a href="studentwork.html" class="w3-padding">STUDENT WORK</a>
+  <a href="studentwork.html" class="w3-padding w3-text-teal">STUDENT WORK</a>
    
   <div class="w3-section w3-padding-top w3-large">
     <a href="https://www.facebook.com/jepica" class="w3-hover-pink w3-hover-text-indigo w3-show-inline-block"><i class="fa fa-facebook-official"></i></a>
@@ -54,31 +67,63 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   <!-- Header -->
   <header class="w3-container">
     <span class="w3-opennav w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
-    <h1><b>ABOUT</b></h1>
+    <h1><b>STUDENT WORK</b></h1>
     <div class="w3-section w3-bottombar w3-padding-3">
     </div>
   </header>
   
-  <!-- First Photo Grid-->
-  <div class="w3-row-padding w3-margin">
-    <p>I’m a Digital Technologies Teacher by day, and an avid gamer by night. You can usually find me snuggled up on a couch at school reading a Harry Potter book, teaching in one of my classes, raiding with my guild, or out on the airsoft field with my G36 and some friends. </p>
-    <p>From playing with robots with my step-dad in pre-school, building drag-and-drop websites for my friends in primary school and eventually learning to code in university, I’ve been interested in technology all my life. I have a passion for both education and coding, as well as making a difference in the community.</p>
-    <p>I have been a girl guide, a tap dancer, an ambassador, an author, a teacher, and a sister. I aspire to one day, be a mentor, an industry leader, an entrepreneur and a life-changer.</p>
-  </div>
-
-  <!--Photos-->
+  <!-- Latest Blog Section -->
   <div class="w3-row-padding">
-    <div class="w3-third w3-container w3-margin-bottom">
-      <img src="images/airsoft.jpg" style="width:100%">
-      <p>Me and my team at airsoft - March 17, 2016</p>
+    <div class="w3-twothird w3-margin-top">
+	<div class="w3-row">
+		<div class="w3-quarter w3-container"></div>
+		<div class="w3-half w3-container">
+			<img src="images/SummerSchool2018.png" alt="Summer School Website Example" style="width:100%;">
+		</div>
+		<div class="w3-quarter w3-container"></div>
+		</div>
+      <h2>SUMMER SCHOOL 2018 - BASIC WEB DESIGN</h2>
+      <div class="w3-justify">
+        <p>Still teaching this class - check back soon!</p>
+      </div>
+      <div class="w3-container w3-border-pink w3-topbar">
+        <p></p>
+      </div>
     </div>
-    <div class="w3-third w3-container w3-margin-bottom">
-      <img src="images/family.jpg" style="width:100%">
-      <p>Me and family at the MIT Whanau Evening - Semester One, 2016</p>
-    </div>
-    <div class="w3-third w3-container w3-margin-bottom">
-      <img src="images/robot.png" style="width:100%">
-      <p>Me and my ex-step-dad playing robot kits - 2002</p>
+
+    <!-- Archive Section -->
+    <div class="w3-third w3-margin-top">
+    <div class="w3-container w3-light-grey">
+    <h2>ARCHIVE</h2>
+      <div class="w3-accordion w3-light-grey w3-margin-bottom">
+        <button onclick="myFunction('2018Acc')" class="w3-btn-block w3-left-align w3-pink">2018</button>
+        <div id="2018Acc" class="w3-accordion-content">
+          <a href="studentwork/summer2018.html">Summer School 2018 - Basic Web Design</a>
+        </div>
+      </div>
+      <!--
+	    <div class="w3-accordion w3-light-grey">
+        <button onclick="myFunction('2017Acc')" class="w3-btn-block w3-left-align w3-pink">2017</button>
+        <div id="2017Acc" class="w3-accordion-content">
+          <a href="posts/2017TFNZApplications.html">Teach First NZ: Wild Hopes and Chasing Dreams</a>
+        </div>
+      </div>
+      <div class="w3-accordion w3-light-grey">
+        <button onclick="myFunction('2016Acc')" class="w3-btn-block w3-left-align w3-pink">2016</button>
+        <div id="2016Acc" class="w3-accordion-content">
+          <a href="posts/2016Sem2.html">Living on a Prayer, Semester Two, 2016</a>
+          <a href="posts/2016Sem1.html">Full Steam Ahead, Semester One 2016</a>
+          <a href="posts/2016Feb.html">In the Deep End, Feb 2016</a>
+          <a href="posts/2016Jan.html">The Start of Something New, Jan 2016</a>
+        </div>
+      </div>
+      <div class="w3-accordion w3-light-grey w3-margin-bottom">
+        <button onclick="myFunction('2015Acc')" class="w3-btn-block w3-left-align w3-pink">2015</button>
+        <div id="2015Acc" class="w3-accordion-content">
+          <a href="posts/2015.html">A Year in Review, Dec 2015</a>
+        </div>
+      </div>
+    -->
     </div>
   </div>
 
@@ -125,7 +170,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 
     </div>
   </div>
-  
+
 <script>
 // Script to open and close sidenav
 function w3_open() {
