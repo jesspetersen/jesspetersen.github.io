@@ -2,12 +2,37 @@
 <html>
 <title>Jess Petersen</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="styles/w3.css">
+<link rel="stylesheet" href="../styles/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 <style>
 html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 .w3-sidenav a,.w3-sidenav h4 {font-weight:bold}
+/* iFrame code from https://benmarshall.me/responsive-iframes/ */
+.intrinsic-container {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  border: 3px solid navy;
+}
+ 
+/* 16x9 Aspect Ratio */
+.intrinsic-container-16x9 {
+  padding-bottom: 56.25%;
+}
+ 
+/* 4x3 Aspect Ratio */
+.intrinsic-container-4x3 {
+  padding-bottom: 75%;
+}
+ 
+.intrinsic-container iframe {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 </style>
 <script>
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -27,14 +52,14 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
     <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding" title="close menu">
       <i class="fa fa-remove"></i>
     </a>
-    <img src="images/dp.jpg" style="width:45%;" class="w3-round-large"><br><br>
+    <img src="../images/dp.jpg" style="width:45%;" class="w3-round-large"><br><br>
     <h4 class="w3-padding-0"><b>JESS PETERSEN</b></h4>
     <p class="w3-text-sand">Digital Technologies Teacher</p>
   </div>
-  <a href="index.html" class="w3-padding">HOME</a>
-  <a href="about.html" class="w3-padding">ABOUT</a>
-  <a href="projects.html" class="w3-padding w3-text-teal">PROJECTS</a>
-  <a href="studentwork.html" class="w3-padding">STUDENT WORK</a>
+  <a href="../index.html" class="w3-padding">HOME</a>
+  <a href="../about.html" class="w3-padding">ABOUT</a>
+  <a href="../projects.html" class="w3-padding w3-text-teal">PROJECTS</a>
+  <a href="../studentwork.html" class="w3-padding">STUDENT WORK</a>
    
   <div class="w3-section w3-padding-top w3-large">
     <a href="https://www.facebook.com/jepica" class="w3-hover-pink w3-hover-text-indigo w3-show-inline-block"><i class="fa fa-facebook-official"></i></a>
@@ -59,71 +84,30 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
     </div>
   </header>
   
-  <!-- First Photo Grid-->
-  <div class="w3-row-padding">
-
-    <div class="w3-third">
-      <div class="w3-card-2">
-        <a href="#"><img src="images/ComingSoon.jpg" style="width:100%" class="w3-hover-opacity"></a>
-        <div class="w3-container">
-          <h4>Coming Soon!</h4>
+  <!-- Latest Blog Section -->
+  <div class="w3-row-padding w3-margin">
+    <div class="w3-margin-top">
+      <img src="../images/PortfolioCRC.png" alt="Culturally Responsive Classroom" style="width:100%">
+      <h2>THE CULTURALLY RESPONSIVE CLASSROOM | MAY - JULY 2018</h2>
+      <div class="w3-justify">
+        <p>The Culturally Responsive Classroom is an HTML5 Canvas application designed to support educators in New Zealand to constuct a more culturally responsive learning environment for their learners. it is intended as a way to make culturally responsive pedagogy more visible, and aid educators with real-life examples of culturally responsive environments. The project is complete and no ongoing development is expected.</p>
+        <p>It was created in Adobe Animate CC as an HTML5 Canvas application powered by HTML5 Canvas code snippets. A conscious decision was made to create the application in HTML5 Canvas instead of Flash, because, despite my prior experience working with Flash (see <a href="SaviourOfKatar.html">Saviour of Katar</a>), I wanted to <a href="https://theblog.adobe.com/adobe-flash-update/">maintain accessibility</a> to the application for years to come. Working with Adobe Multimedia software after such a long time away from it gave me the opportunity to rebuilt my skills, and prepare for a time where I, perhaps inevitably, will be teaching HTML5 in my own classes. I was able to experiment with embedding external links in my application, and after a significant amount of time wasted working on frames, rediscovered the (indespensible) button symbol "up" and "down" states. It was worth the effort, and I am very pleased with the result overall. The application itself represents approximately 15 hours of work, and if future improvements were to be made, I'd love to add a quiz component, or more interactive features.</p>
+        <!--Insert the actual HTML5 Canvas App-->
+        <div class="intrinsic-container intrinsic-container-4x3">
+          <iframe src="Classroom.html" allowfullscreen></iframe>
         </div>
+        <!--End App here-->
+        <div id="classroomfile"></div>
+				<p>This page is still under construction. If you would like to view the application outside of my website GUI, feel free to do so <a href="Classroom.html" target="_blank" >here</a>.</p>
+      </div>
+      <div class="w3-container w3-border-pink w3-topbar">
+        <p></p>
       </div>
     </div>
-
-    <div class="w3-third">
-      <div class="w3-card-2">
-        <a href="#"><img src="images/ComingSoon.jpg" style="width:100%" class="w3-hover-opacity"></a>
-        <div class="w3-container">
-          <h4>Coming Soon!</h4>
-        </div>
-      </div>
-    </div>
-
-    <div class="w3-third">
-      <div class="w3-card-2">
-        <a href="projects/CulturallyResponsiveClassroom.html"><img src="images/PortfolioCRC.png" style="width:100%" class="w3-hover-opacity"></a>
-        <div class="w3-container">
-          <h4>The Culturally Responsive Classroom</h4>
-        </div>
-      </div>
-    </div>
-
-  </div>
-  <br />
-  <div class="w3-row-padding">
-
-    <div class="w3-third">
-      <div class="w3-card-2">
-        <a href="projects/CuteWriter.html"><img src="images/PortfolioCuteWriter.PNG" style="width:100%" class="w3-hover-opacity"></a>
-        <div class="w3-container">
-          <h4>CuteWriter</h4>
-        </div>
-      </div>
-    </div>
-
-    <div class="w3-third">
-      <div class="w3-card-2">
-        <a href="projects/SaviourOfKatar.html"><img src="images/PortfolioSoK.jpg" style="width:100%" class="w3-hover-opacity"></a>
-        <div class="w3-container">
-          <h4>Saviour of Katar</h4>
-        </div>
-      </div>
-    </div>
-
-    <div class="w3-third">
-      <div class="w3-card-2">
-        <a href="projects/OldSite.html"><img src="images/PortfolioSiteShot.JPG" style="width:100%" class="w3-hover-opacity"></a>
-        <div class="w3-container">
-          <h4>site.jesspetersen.net</h4>
-        </div>
-      </div>
-    </div>
-
   </div>
 
   <!-- Footer -->
-  <footer class="w3-container w3-padding-32 w3-white w3-margin-top">
+  <footer class="w3-container w3-padding-32 w3-white">
   <div class="w3-row-padding">
     <div class="w3-col w3-container w3-white" style="width:66%">
       <p></p>
