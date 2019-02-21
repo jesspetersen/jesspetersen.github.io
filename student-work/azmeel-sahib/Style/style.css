@@ -1,0 +1,141 @@
+#nav {
+    position: absolute;
+    left: 0px;
+    height: 40px;
+   
+    width: 100%;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+       background-color: black;
+}
+#nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+#nav ul li {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+#nav ul li a {
+    text-decoration: none;
+    padding: 9px 30px;
+    display: block;
+    color: #FFF;
+    text-align: center;
+}
+
+li a:hover {
+    background-color: rgb(2, 25, 153);
+}
+
+.active {
+    background-color: rgb(240, 56, 0);
+}
+
+
+h1 {
+   font-family: Arial, Helvetica, sans-serif;
+   text-align: center;
+    font-weight: 910;
+
+}
+
+
+/* This will be used for the oriantation for each oone of my images in each webpage, keeping it at the centre of the webpage*/
+#container { overflow: hidden; }
+#floated-imgs { float: right; }
+#floated-imgs img {display: block; }
+
+
+
+h3{
+font-family: Arial, Helvetica, sans-serif;
+text-align: center;
+}
+
+
+h2{
+font-family: Arial, Helvetica, sans-serif;
+text-align: center;
+}
+
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: left;
+}
+
+
+h1 {
+    font-size: 40px;
+}
+
+p{  font-family: Arial, Helvetica, sans-serif;
+ font-weight: 700;
+ text-align: center;
+
+}
+
+
+ul{  font-family: Arial, Helvetica, sans-serif;
+ }
+
+
+
+/* This code will be linked to all of my text on each one of my webpages */
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+   
+}
+
+
+
+/*The code below will be used for the animation for each one of my subtitle sin each one of my webpages, chnaging colours from blue to black every five seconds   */
+
+#myDIV {
+  
+    
+    color: black;
+    -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 5s infinite;
+}
+
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+    50% {color: blue;}
+}
+
+@keyframes mymove {
+    50% {color: blue;}
+}
+
+@keyframes mymove {
+    50% {color: blue;
+}
+
+div.static {
+    position: static;
+    border: 3px solid #73AD21;
+}
+
+div.a {
+    text-align: center;
+}
+
+
+
+
+
+

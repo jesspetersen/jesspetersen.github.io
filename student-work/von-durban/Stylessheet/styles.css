@@ -1,0 +1,87 @@
+h1 {text-align:center;
+font-family: Helvetica, sans-serif;
+color: rgb(192, 57, 43)}
+
+.topnav {
+	overflow: hidden;
+	background-color: rgb(150, 40, 27);
+}
+
+.topnav li a {
+  float:left;
+ padding: 14px 16px;
+display: block;
+text-decoration: none;
+font-weight: bold;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+text-align: center}
+
+h3 {font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif}
+h2 {text-align: center}
+h4 {text-align: center;
+font-family: Arial, Helvetica, sans-serif}
+h5 {font-family: Arial, Helvetica, sans-serif}
+p {font-family: Arial, Helvetica, sans-serif}
+
+
+.topnav li {float: left;
+list-style: none;
+}
+/* General font colour to contrast with the dark red colour. */
+.topnav a {
+  color: #f2f2f2;
+
+  text-decoration: none;
+  font-size: 17px;
+ 
+}
+/* When mouse is hovered above, it will change colour. */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+	background-color: #EA9522;
+	color: white;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Four image containters */
+.column {
+    float: right;
+    width: 25%;
+    padding: 5px;
+    border-style: solid;
+    border-color: black;
+    border-bottom-color: red;
+    background-color: grey;
+}
+/* Clears floats after image containters */
+.row::after {
+  content:"";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+/* Contact Details for the school */
+footer {position: fixed;
+float: left;
+  background-color: rgb(150, 40, 27);
+  font-weight: normal;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #f2f2f2;
+  padding: 5px;
+  text-align: center;
+  width:100%;
+  bottom: 0
+}
+
+li {list-style: none;}
