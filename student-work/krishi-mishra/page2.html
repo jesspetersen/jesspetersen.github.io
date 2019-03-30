@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <title>About Web Desgin</title>
+	<link rel="stylesheet" href="styles/style.css"></link> 
+  </head>
+<body>
+   <header>
+      <h1><u> About Web Desgin</u> </h1>
+    </header>
+    <nav>
+    <a href=index.html><u> <strong> Home page </strong></u> </a>
+  </nav> 
+  <nav>
+     <a href=page3.html> <u> <strong>Why should you pick Web Design</strong></u></a>
+
+     <nav class="dropdown">
+  <button class="dropbtn">Courses you will take</button>
+  <nav class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </nav>
+</nav>
+  </nav> 
+   <table>
+  <tr>
+    <th>Assessment name</th>
+    <th>Standard</th>
+    <th>Credits</th>
+  </tr>
+  <tr>
+    <td>Website making</td>
+    <td>Unit standard</td>
+    <td>6 (Level 3)</td>
+  </tr>
+  <tr>
+    <td>Databases</td>
+    <td>As91368</td>
+    <td>6 (Level 2)</td>
+  </tr>
+  <tr>
+    <td>Website planning</td>
+    <td>As91369</td>
+    <td>4 (Level 2)</td>
+  </tr>
+  <tr>
+    <td>Website making</td>
+    <td>As91370</td>
+    <td>4 (Level 2)</td>
+  </tr>
+   </table>
+   <p id="page2para">A level 3 unit standard will be the first internal you will do. If you haven't learnt any HTML before don't worry your teacher will teach you everything which will make the internal very easy. The internal requires you to create a website with a bit of paper work. Secondly you will be doing the databases internal which is a level 2 standard. Another easy topic if you just complete the work in class. It requires you to make a database and a couple other tasks on word. The next internal will be split into two parts, the first internal will be planning the website and the second internal will be making the website. There is an external which is worth 4 credits but is optional, if you wish to try and get a course endorsement you have to do it. </p></table>
+
+
+ <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img id="one" src="images/two1.jpg" style="width:100%">
+  <div class="text">Digital Classroom</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img id="two" src="images/two2.jpg" style="width:100%">
+  <div class="text">Outside H BLock</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img id="three" src="images/two3.jpg" style="width:100%">
+  <div class="text">H block hallway</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<!-- I have used Java script underneath-->
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+ <footer>
+  Website made my Krishi Mishra© <br> Contact me at km15088@student.phs.school.nz </br>
+</footer>    
+</body>
+</html>
+
+  
